@@ -210,18 +210,50 @@
 
 // CASE 9
 
-let murderer = 'Professor Plum';
+// let murderer = 'Professor Plum';
+//
+// if (murderer === 'Professor Plum') {
+//   let murderer = 'Mrs. Peacock';
+// }
+//
+// const declareMurderer = function() {
+//   return `The murderer is ${murderer}.`;
+// }
+//
+// const verdict = declareMurderer();
+// console.log(verdict);
 
-if (murderer === 'Professor Plum') {
-  let murderer = 'Mrs. Peacock';
-}
+
+// murder has been assinged to professor plum but not really sure what is happening.
+
+// EXTENSION
+
+
+const scenario = {
+  murderer: 'Mrs. Collin',
+  room: 'E27',
+  weapon: 'Tea Cup'
+
+};
+
+const whatDate = function(week){
+  if ( week > 16 )
+    scenario.room = "WE HAVE FINISHED ALREADY!!";
+
+    const operationValkiry = function(){
+      if (scenario.room != 'E27')
+      scenario.weapon = "Dynamit", scenario.murderer = "Tom Cruis";
+    }
+    operationValkiry()
+};
+
+
+
 
 const declareMurderer = function() {
-  return `The murderer is ${murderer}.`;
+  return `The murderer is ${scenario.murderer} in ${scenario.room} with ${scenario.weapon}.`;
 }
 
+whatDate(18);
 const verdict = declareMurderer();
 console.log(verdict);
-
-
-// murder has been assinged to professor plum 
